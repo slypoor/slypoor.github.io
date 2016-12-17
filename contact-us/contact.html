@@ -84,27 +84,29 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header style="background-image:url(../img/lesson-bg.jpg);">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Contact Form</div>
+                <div id="intro" style="color:white; font-family: Kaushan Script,Helvetica Neue,Helvetica,Arial,cursive" class="intro-lead-in">Contact Form</div>
                 <!-- <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a> -->
             </div>
         </div>
     </header>
     
-    <div id="contact" style="width: 200px; margin: 0 auto; margin-left: auto; margin-right: auto;">
+    <div id="contact" style="width: 500px; margin: 0 auto; margin-left: auto; margin-right: auto;">
         <div>
         <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfkafPEyEV-d2N21myO1mLsws9t692E5Ur-iomYN7B_lLL5Fg/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
-            <label class="gform">Name:</label><br>
-            <input type="text" name="entry.1555163064" id="entry.1555163064" required autofocus placeholder="Name"><br>
-            <label class="gform">Email:</label><br>
-            <input type="text" name="entry.516303283" id="entry.516303283"  required placeholder="Email"><br>
+            <label class="gform">Name: *</label><br>
+            <input class="form-control" type="text" name="entry.1555163064" id="entry.1555163064" required autofocus placeholder="Name"><br>
+            <label class="gform">Email: *</label><br>
+            <input class="form-control" type="text" name="entry.516303283" id="entry.516303283"  required placeholder="Email"><br>
             <label class="gform">Phone Number:</label><br>
-            <input type="text" name="entry.452723283" id="entry.452723283" placeholder="Phone Number"><br>
-            <label class="gform">Question:</label><br>
-            <textarea id="entry.2077878866" name="entry.2077878866" form="gform" required placeholder="Enter question here..."></textarea>
-            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="form-control" type="text" name="entry.452723283" id="entry.452723283" placeholder="Phone Number"><br>
+            <label class="gform">Question: *</label><br>
+            <textarea class="form-control" id="entry.2077878866" name="entry.2077878866" form="gform" required="" rows="9" maxlength="1000" style="height:183px;overflow-y:hidden;"></textarea>
+            <br>
+            <input class="btn btn-primary" style="margin: 0 auto" type="submit" value="Submit">
+            <p style="font-size: 10px">* Marks required.</p>
         </form>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         </div>

@@ -17,6 +17,26 @@
         margin: auto;
         text-align: center;
     }
+      
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+
+    body {
+      margin: 0 0 100px; /* bottom = footer height */
+      padding: 25px;
+    }
+
+    footer {
+      background-color: orange;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100px;
+      width: 100%;
+      overflow:hidden;
+    }
     </style>
   </head>
   <body>
@@ -27,5 +47,8 @@
       <h1>Hello {{yourName}}!</h1>
       <a href="about.html">About</a>
     </div>
+    <footer>
+     <h1>Footer Content</h1>    
+    </footer>
   </body>
 </html>

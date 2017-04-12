@@ -8,10 +8,41 @@
   </head>
   <body>
     <div>
-      <a href="index.html">Home</a>
+        <h1>Random Thoughts</h1>
+        <br>
+        <h3>Do air freshener molecules float around or do they just drop?</h3>
+        <p id="para"></p>
+        <textarea id="words" rows="1" cols="20">Enter comment</textarea>
+        <input id="button" type="button" onclick="getwords()" value="Enter" />
+        
+        <h3>Does my cat go down the road to have sexy time with another local cat? </h3>
+        <p>Probably, he's such a sly dog</p>
+        <h3>Why do the two brains inside me fight? One always wins and it's a sin</h3>
+        <p>No I am not psychotic, I just think that all people have two seperate brains, and one is stronger than the other when it comes to certain things.</p>
+        <h3>Why did I make this page in the first place? I don't like blogs at all</h3>
+        <p>Maybe I'm telling myself it's a blog, but its really not</p>
     </div>
+      
     <footer>
-      <div>Keano Porcaro &copy; 2015-2017</div>
+        <div>
+            <a href="index.html">Home</a>
+        </div>
+        <div>
+            <br>
+            Keano Porcaro &copy; 2015-2017
+        </div>
     </footer>
+      
+      <!-- Magic stuff -->
+      <script type="text/javascript">
+        function getwords() {
+          text = words.value;
+          document.getElementById("para").innerHTML += text
+          var elemeent = document.getElementById("words");
+          elemeent.parentNode.removeChild(elemeent);
+          var rawr = document.getElementById("button");
+          rawr.parentNode.removeChild(rawr);
+        }
+    </script>
   </body>
 </html>

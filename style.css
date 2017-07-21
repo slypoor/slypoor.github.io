@@ -25,6 +25,12 @@ html {
   box-sizing: border-box;
 }
 
+.list-inline{
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
 *,
 *:before,
 *:after {
@@ -69,6 +75,16 @@ h1, h2, h3, h4, h5 {
  * Footer Styles
  */
 
+.icons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  color:white;    
+  text-align: center;
+  
+}
+
 .footer {
   background: url(img/background.png);
   position: absolute;
@@ -79,6 +95,22 @@ h1, h2, h3, h4, h5 {
   color:white;    
   text-align: center;
   
+}
+
+.remove-a:link {
+    color: black;
+}
+
+.remove-a:visited {
+    color: black;
+}
+
+.remove-a:hover {
+    color: black;
+}
+
+.remove-a:active {
+    color:black;
 }
 
 #center {
@@ -94,19 +126,21 @@ h1, h2, h3, h4, h5 {
 }
 
 nav {
-	padding: 1em 0; 
+    right: 0;
+    left: 0;
+	padding: 1rem;
     position: relative;
 }
 
 nav a { 
 	text-decoration: none;
 	color: #fff;
-	padding: 1em;
+	padding: 1rem;
 	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
 }
 
 nav a:hover {
-	background: rgba(0, 0, 0, 0.7);
+	background: url(img/mainbg.png);
 }
 
 nav a {

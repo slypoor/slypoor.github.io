@@ -97,6 +97,15 @@ h1, h2, h3, h4, h5 {
   
 }
 
+a {color:white;}      /* unvisited link */
+a:visited {color:white;}  /* visited link */
+a:hover {color:white;}  /* mouse over link */
+a:active {color:white;}  /* selected link */
+
+.privacy-policy {
+    text-decoration: none;
+}
+
 .remove-a:link {
     color: black;
 }

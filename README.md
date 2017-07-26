@@ -4,8 +4,5 @@ This is the personal website of Keano Porcaro. It is hosted on the account [@sly
 ## TODO:
 - Add more about me
 - Remove the nav bar/about page?
-- Add Google Analytics Tracking
+~~- Add Google Analytics Tracking~~
 - Add Privacy Policy page when Google Analytics is added
-
-
-=]

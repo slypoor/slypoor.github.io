@@ -291,28 +291,5 @@
         </div> <!-- /container base_container -->
     </div> <!-- /wbars_wrapper -->
 
-
-
-
-    <script type="text/javascript">
-    $(document).ready(function() {
-
-      privacyPolicy.start();
-
-			$(".expand-content").hide();
-			$(".expand").addClass("collapsed");
-			$(".expand .expand-click").click(function () {
-				$(this).parents(".expand").toggleClass("collapsed");
-				$(this).parents(".expand").toggleClass("expanded");
-				$(this).parents(".expand-item").toggleClass("hover");
-				$(this).children('.icon-17').toggleClass("icon-expand");
-				$(this).children('.icon-17').toggleClass("icon-collapse");
-				$(this).parents('.expand').children('.expand-content').slideToggle("fast");
-			});
-
-    });
-
-    </script>
-
 </body>
 </html>

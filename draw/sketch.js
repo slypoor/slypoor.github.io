@@ -29,7 +29,7 @@ function startGame(){
 	removeElements();
 	gameState = 'play';
 	snake = new Snake();
-    rat = new Rat(width, height);
+    	//rat = new Rat(width, height);
 	setJelloShots(5);
 	loop();
 }
@@ -43,15 +43,15 @@ function runGame(){
     if (devop) {
         fill(255,0,0);
         text("x: " + snake.pos.x + ", y: " + snake.pos.y, 1, 38);
-        text("rat x: " + rat.currentX + ", rat y: " + rat.currentY, 1, 52);
+        //text("rat x: " + rat.currentX + ", rat y: " + rat.currentY, 1, 52);
     }
 
 	snake.update();
 	snake.show();
 	snake.checkDeath();
 
-    rat.update();
-    rat.show();
+    //rat.update();
+    //rat.show();
     
 
 	fill(0, 255, 0, 100);

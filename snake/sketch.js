@@ -15,13 +15,13 @@ function setup(){
 function initGame(){
 	background(50, 50, 100);
 	var name = 'Snake Game';
-	textSize(50);
+    var space = 'Press enter or space to start';
+	textSize(32);
 	fill(255);
 	nameWidht = textWidth(name);
+    spaceWidht = textWidth(space);
 	text(name, (width - nameWidht)/2, height/2 - 40);
-	startBtn = createButton('Start Game');
-	startBtn.position(width/2 - startBtn.width/2, height/2);
-	startBtn.mousePressed(startGame);
+    text(space, (width - spaceWidht)/2, height/2);
 	noLoop();
 }
 
@@ -142,7 +142,7 @@ function keyPressed(){
     movement.push([-1, 0]);
   }else if(keyCode === RIGHT_ARROW){
     movement.push([1, 0]);
-  } if((keyCode == ENTER || keyCode == 32) && (gameState == 'end')) {
+  } if((keyCode == ENTER || keyCode == 32)) {
     startGame();
   }
 }

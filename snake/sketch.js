@@ -8,7 +8,7 @@ var gameState = 'init';
 var devop = false;
 
 function setup(){
-  createCanvas(600, 600);
+  createCanvas(600, 500);
   frameRate(10);
 }
 

@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /resume.pdf
+
+Sitemap: https://keano.me/sitemap.xml

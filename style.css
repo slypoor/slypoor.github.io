@@ -31,9 +31,9 @@ color: white;
 }
 
 .main-div {
-    width: 100%;
-    height: 50%;
     text-align: center;
+    width: 50%;
+    margin: auto;
 }
 /**
  * Demo Styles
@@ -59,15 +59,17 @@ html {
     list-style: none;
 }
 
+#privacy {
+    display: inline-block;
+    margin-top: 5px;
+}
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-        p{
-            white-space: pre;
-        }
     button.accordion {
         background: url(img/mainbg.png);
         color: white;

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Keano Porcaro's Personal Portfolio">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,C#,C++,Java,PHP,GPG,PGP,Jabber">
+    <meta name="author" content="Keano Porcaro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="p5.js"></script>
+    <script src="sort.js"></script>
+    <title>Keano Porcaro</title>
+    <style>
+    canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
+    </style>
+</head>
+<body>
+    <nav class="nav-style">
+        <a href="/">Home</a><a href="resume.pdf">Resume</a><a href="mdi.html">Programming Ideas</a><a href="">Sort Visualisation</a>
+    </nav>
+
+    <div class="main-div">
+      <p id="results">------------------------------</p>
+      <input type="button" value="Quick Sort" name="Quick Sort" onclick="quickSortButton()"></input>
+      <input type="button" value="Bubble Sort" name="Bubble Sort" onclick="bubbleSortButton()"></input>
+      <input type="button" value="Merge Sort" name="Merge Sort" onclick="mergeSortButton()"></input>
+      <input type="button" value="Insertion Sort" name="Insertion Sort" onclick="insertionSortButton()"></input>
+      <input type="button" value="Heap Sort" name="Heap Sort" onclick="heapSortButton()"></input>
+      <input type="button" value="Shell Sort" name="Shell Sort" onclick="shellSortButton()"></input>
+      <input type="button" value="Random Array" name="Random Array" onclick="generateRandomArray()"></input>
+      <canvas></canvas>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer">Copyright &copy; Keano Porcaro 2017 <hr style="height: 1px; visibility: hidden;"><a class="remove-a" target="_blank" href="https://twitter.com/ransty"><i class="fa fa-twitter fa-3x fa-fw" aria-hidden="true"></i></a><a   class="remove-a" target="_blank" href="https://www.linkedin.com/in/keano-porcaro-28b592147"><i class="fa fa-linkedin-square fa-3x fa-fw" aria-hidden="true"></i></a><a class="remove-a" target="_blank" href="https://github.com/ransty"><i class="fa fa-github fa-3x fa-fw" aria-hidden="true"></i></a><br><a id="privacy" href="privacypolicy.html" target="_blank">Privacy Policy</a></div>
+    </footer>
+    <script>
+        function(e,t,a,c,n,s,i){e.GoogleAnalyticsObject=n,e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},e[n].l=1*new Date,s=t.createElement(a),i=t.getElementsByTagName(a)[0],s.async=1,s.src=c,i.parentNode.insertBefore(s,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-102967540-1","auto"),ga("send","pageview");
+    </script>
+</body>
+</html>

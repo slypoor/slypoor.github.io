@@ -87,7 +87,7 @@ function heapSortButton() {
   items = heapSort(items);
   var t1 = performance.now();
   draw();
-  document.getElementById("results").innerHTML = "Heap Sort took " + (t1 - t0) + " milliseconds.";
+  document.getElementById("results").innerHTML = "Heap Sort took (not working properly) " + (t1 - t0) + " milliseconds.";
 }
 
 function shellSortButton() {

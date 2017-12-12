@@ -32,7 +32,6 @@ color: white;
 
 .main-div {
     text-align: center;
-    width: 50%;
     margin: auto;
 }
 /**
@@ -135,21 +134,43 @@ h1, h2, h3, h4, h5 {
   left: 0;
   right: 0;
   padding: 2rem;
-  color:white;    
+  color:white;
   text-align: center;
-  
+
 }
 
 .footer {
   background: url(img/background.png);
   position: absolute;
-  right: 0;
   bottom: 0;
-  left: 0;
-  padding: 1rem;
-  color:white;    
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  color:white;
   text-align: center;
-  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+.main-container {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 100px; /* height of your footer */
 }
 
 a {color:white;}      /* unvisited link */
@@ -196,7 +217,7 @@ nav {
     position: relative;
 }
 
-nav a { 
+nav a {
 	text-decoration: none;
 	color: #fff;
 	padding: 1rem;
